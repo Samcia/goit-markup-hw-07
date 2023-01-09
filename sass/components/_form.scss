@@ -1,0 +1,163 @@
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 250ms ease-in-out;
+
+  &.is-hidden {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg)
+      skew(40deg, 40deg);
+    cursor: pointer;
+  }
+}
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: $logo-footerColor;
+  position: relative;
+}
+.close-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  background-color: $logo-footerColor;
+}
+.form {
+  margin: auto;
+
+  &__header {
+    padding: 40px 40px 12px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px 0px 40px;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(117, 117, 117, 1);
+  }
+
+  &__input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 11px 0px 11px 40px;
+    margin-top: 4px;
+    outline: none;
+
+    &:focus {
+      border: 1px solid $logoColor;
+      border-radius: 4px;
+
+      &svg {
+        fill: $logoColor;
+      }
+    }
+  }
+  &__svg {
+    position: relative;
+    bottom: 30px;
+    left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:focus {
+      border: 1px solid $logoColor;
+      border-radius: 4px;
+    }
+  }
+  &__textarea {
+    padding: 11px 0px 11px 12px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+    outline: none;
+    &:focus {
+      border: 1px solid var(--logo-color);
+      border-radius: 4px;
+    }
+  }
+  &__check {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(117, 117, 117, 1);
+    margin: 20px 0px 30px 54px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
+  &_checkbox {
+    appearance: none;
+
+    &--div {
+      margin-right: 7px;
+      width: 16px;
+      height: 15px;
+      outline: none;
+      border: 2px solid rgba(33, 33, 33, 1);
+      border-radius: 3px;
+      &svg {
+        transition: $transition;
+      }
+    }
+  }
+  &__svg-check {
+    position: relative;
+    display: none;
+  }
+  &__checkbox:checked,
+  &__checkbox--div {
+    background: $logoColor;
+    border: 2px $logoColor;
+  }
+  &__checkbox:checked,
+  &__checkbox--div svg {
+    display: block;
+    fill: $logo-footerColor;
+  }
+
+  &--statement {
+    color: $logoColor;
+    text-decoration: underline;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    margin: 0px 3px 0px 3px;
+  }
+}
+.form-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 76px;
+  background-color: $logoColor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  cursor: pointer;
+  color: $logo-footerColor;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0px 164px 40px 164px;
+}

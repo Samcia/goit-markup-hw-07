@@ -578,7 +578,9 @@ body {
   cursor: pointer;
   background-color: #ffffff;
 }
-
+.form {
+  margin: auto;
+}
 .form__header {
   padding: 40px 40px 12px 40px;
   display: flex;
@@ -654,21 +656,29 @@ body {
   border: 2px solid rgba(33, 33, 33, 1);
   border-radius: 3px;
 }
+.form__checkbox--div,
+.form__checkbox--div svg {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__svg-check {
+  position: relative;
+  display: none;
+}
+.form__checkbox:checked + .form__checkbox--div {
+  background: var(--logo-color);
+  border: 2px solid var(--logo-color);
+}
+.form__checkbox:checked + .form__checkbox--div svg {
+  display: block;
+  fill: var(--logo-ftr);
+}
 .form--statement {
   color: var(--logo-color);
   text-decoration: underline;
   line-height: 24px;
   letter-spacing: 0.03em;
   margin: 0px 3px 0px 3px;
-}
-.form__svg-check svg {
-  position: relative;
-  display: none;
-}
-.form__checkbox--div:checked {
-  position: relative;
-  background: var(--logo-color);
-  fill: var(--logo-ftr);
 }
 .form-button {
   display: inline-flex;

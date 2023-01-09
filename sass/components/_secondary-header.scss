@@ -1,0 +1,59 @@
+.team-background {
+  background-color: var(--team-background-color);
+}
+.header-secondary {
+  font-size: 36px;
+  color: var(--headers-color);
+  text-align: center;
+  display: block;
+  margin-bottom: 50px;
+  border-radius: 4px;
+}
+.section-style {
+  padding-top: 0px;
+}
+.work-spaces {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  justify-content: center;
+  column-gap: 30px;
+  &__list {
+    text-decoration: none;
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+  }
+  &__div {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    left: 210x;
+    bottom: 0;
+  }
+  &__paragraph {
+    color: $logo-footerColor;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+}
+.computer-app {
+  padding: 27px 90px;
+}
+.mobile-app {
+  padding: 27px 110px;
+}
+.graphics-solutions {
+  padding: 27px 94px;
+}

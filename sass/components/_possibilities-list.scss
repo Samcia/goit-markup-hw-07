@@ -1,0 +1,43 @@
+.possibilities-list {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+  }
+  &__div {
+    width: 270px;
+    height: 120px;
+    background-color: $team-sectionBackground;
+    border: 1px solid $team-sectionBackground;
+    border-radius: 4%;
+    margin-bottom: 30px;
+  }
+  &__svg {
+    align-items: center;
+    fill: $team-sectionBackground;
+    width: 70px;
+    height: 70px;
+    margin-top: 25px;
+  }
+  &__h3 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    display: flex;
+    padding-bottom: 10px;
+  }
+  &__paragraph {
+    font-size: 14px;
+    text-decoration: none;
+    color: $paragraphColor;
+    display: flex;
+    text-align: left;
+  }
+}
