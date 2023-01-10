@@ -1,9 +1,9 @@
 .team-background {
-  background-color: var(--team-background-color);
+  background-color: $team-sectionBackground;
 }
 .header-secondary {
   font-size: 36px;
-  color: var(--headers-color);
+  color: $headersColor;
   text-align: center;
   display: block;
   margin-bottom: 50px;

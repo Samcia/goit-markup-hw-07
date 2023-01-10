@@ -27,7 +27,7 @@
     font-size: 14px;
     font-weight: 400px;
     text-decoration: none;
-    color: var(--paragraph-color);
+    color: $paragraphColor;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -47,7 +47,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: var(--team-icons);
+    fill: $team-iconsColor;
     width: 44px;
     height: 44px;
     border-radius: 50%;

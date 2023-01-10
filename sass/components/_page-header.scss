@@ -1,3 +1,16 @@
+:hover,
+:focus {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: $headersColor;
+}
+
 .header {
   display: flex;
   align-items: center;
