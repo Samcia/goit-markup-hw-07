@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--ftr-background);
+  background-color: $footerBackground;
   text-decoration: none;
   display: block;
   align-items: center;
@@ -133,7 +133,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   cursor: pointer;
-  color: var(--logo-ftr);
+  color: $logo-footerColor;
   font-weight: 700px;
   font-size: 16px;
   display: flex;
