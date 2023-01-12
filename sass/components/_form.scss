@@ -54,13 +54,6 @@
     font-weight: 400;
     font-size: 12px;
     color: rgba(117, 117, 117, 1);
-
-    &:focus {
-      border: 1px solid $logoColor;
-      border-radius: 4px;
-      transition: $transition;
-      fill: $logoColor;
-    }
   }
 
   &__input {
@@ -69,6 +62,14 @@
     padding: 11px 0px 11px 40px;
     margin-top: 4px;
     outline: none;
+    &:focus {
+      border: 1px solid $logoColor;
+      border-radius: 4px;
+      transition: $transition;
+      .form__svg {
+        fill: $logoColor;
+      }
+    }
   }
 
   &__svg {
@@ -79,10 +80,6 @@
     align-items: center;
     justify-content: center;
     transition: $transition;
-
-    &:focus {
-      fill: $logoColor;
-    }
   }
   &__textarea {
     padding: 11px 0px 11px 12px;
@@ -118,10 +115,9 @@
       border: 2px solid rgba(33, 33, 33, 1);
       border-radius: 3px;
       transition: $transition;
-
-      &svg {
-        transition: $transition;
-      }
+      appearance: none;
+      opacity: 0;
+      pointer-events: none;
     }
     &:checked,
     &--div {
