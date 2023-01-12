@@ -114,7 +114,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding: 15px;
-    width: calc(100%-15px);
+    width: calc(100% - 15px);
 
     &:hover {
       background-color: $footerBackground;
