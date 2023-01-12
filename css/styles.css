@@ -11,6 +11,7 @@
   --social-items: rgba(175, 177, 184, 1);
   --social-items-bg: rgba(255, 255, 255, 0.1);
   --team-icons: #afb1b8;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 :hover,
 :focus {
@@ -375,6 +376,7 @@ body {
   width: 170px;
   height: 92px;
   cursor: pointer;
+  fill: var(--logo-ftr);
 }
 .customers__list a {
   display: flex;
@@ -387,12 +389,11 @@ body {
   border: 1px solid var(--logo-color);
 }
 .customers__list a:hover svg {
-  --social-items: var(--logo-color);
+  fill: var(--logo-color);
 }
 
 .customers__svg {
   fill: var(--social-items);
-  padding: 18px 32px;
 }
 .footer {
   background-color: var(--ftr-background);
@@ -513,7 +514,7 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px;
-  width: calc(100% - 30px);
+  width: calc(100% - 15px);
 }
 .sign-up__email:hover,
 .sign-up__email:focus {
@@ -527,7 +528,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
   color: var(--logo-ftr);
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 16px;
   display: flex;
   justify-content: center;
@@ -578,9 +579,7 @@ body {
   cursor: pointer;
   background-color: #ffffff;
 }
-.form {
-  margin: auto;
-}
+
 .form__header {
   padding: 40px 40px 12px 40px;
   display: flex;
@@ -618,6 +617,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: var(--transition);
 }
 .form__svg:focus {
   fill: var(--logo-color);
@@ -668,11 +668,17 @@ body {
 .form__checkbox:checked + .form__checkbox--div {
   background: var(--logo-color);
   border: 2px solid var(--logo-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .form__checkbox:checked + .form__checkbox--div svg {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   fill: var(--logo-ftr);
 }
+
 .form--statement {
   color: var(--logo-color);
   text-decoration: underline;
@@ -722,6 +728,7 @@ body {
 .button-portfolio:hover,
 .button-portfolio:focus {
   background-color: var(--logo-color);
+  border-color: #2196f3;
   color: var(--logo-ftr);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);

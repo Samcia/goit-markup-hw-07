@@ -59,11 +59,9 @@
       align-items: center;
       width: 44px;
       height: 44px;
-
-      &svg {
-        fill: $logo-footerColor;
-      }
+      fill: $logo-footerColor;
     }
+
     &__svg {
       fill: $team-iconsColor;
       column-gap: 30px;

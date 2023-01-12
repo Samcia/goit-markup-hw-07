@@ -13,25 +13,19 @@
     width: 170px;
     height: 92px;
     cursor: pointer;
+    fill: $social-itemsColor;
 
-    &a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
+    &:hover {
+      border: 1px solid $logoColor;
+      transition: $transition;
 
-      &:hover {
-        border: 1px solid $logoColor;
-
-        &svg {
-          --social-items: $logoColor;
-        }
+      & svg {
+        fill: $logoColor;
+        transition: $transition;
       }
     }
-  }
-  &__svg {
-    fill: $social-itemsColor;
-    padding: 18px 32px;
+    &__svg {
+      fill: $social-itemsColor;
+    }
   }
 }

@@ -14,6 +14,7 @@ body {
 .header {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   &--border {
     border-bottom: 1px solid $headerBorder;
@@ -26,6 +27,8 @@ body {
   text-decoration: none;
   color: $headersColor;
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 93px;
 
   &--studio {
@@ -94,6 +97,7 @@ body {
   &__icon {
     margin-right: 10px;
     display: inline-flex;
+    fill: $paragraphColor;
   }
 }
 

@@ -20,6 +20,7 @@
 .footer-links {
   list-style: none;
   margin-top: 20px;
+
   &__address {
     color: $logo-footerColor;
     cursor: pointer;
@@ -73,19 +74,11 @@
     justify-content: center;
     margin-top: 20px;
     margin-right: 10px;
+    fill: $logo-footerColor;
 
     &:hover {
       background-color: $logoColor;
-      &svg {
-        fill: $logoColor;
-      }
     }
-  }
-  &svg {
-    fill: $logo-footerColor;
-    column-gap: 10px;
-    align-items: center;
-    cursor: pointer;
   }
 }
 .footer-h3 {
@@ -99,15 +92,17 @@
   margin-top: 12px;
   margin-left: 70px;
   flex-grow: 1;
+
   &__form {
+    margin-top: 20px;
     display: flex;
     align-items: center;
-    margin-top: 20px;
-    column-gap: 12px;
+    justify-content: center;
+    width: 100%;
   }
   &_label {
-    max-width: 358px;
     width: 100%;
+    max-width: 358px;
   }
   &__email {
     background-color: $footerBackground;
@@ -119,7 +114,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding: 15px;
-    width: calc(100% - 30px);
+    width: calc(100%-15px);
 
     &:hover {
       background-color: $footerBackground;
@@ -134,18 +129,11 @@
   border-radius: 4px;
   cursor: pointer;
   color: $logo-footerColor;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 24px;
-
-  &svg {
-    fill: $logo-footerColor;
-  }
-}
-.email {
-  margin-bottom: 20px;
-  background-color: $footerBackground;
+  fill: $logo-footerColor;
 }
