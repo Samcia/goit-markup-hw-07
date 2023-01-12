@@ -66,7 +66,7 @@
       border: 1px solid $logoColor;
       border-radius: 4px;
       transition: $transition;
-      .form__svg {
+      + .form__svg {
         fill: $logoColor;
       }
     }
@@ -107,38 +107,35 @@
   &__checkbox {
     appearance: none;
 
-    &--div {
-      margin-right: 7px;
-      width: 16px;
-      height: 15px;
-      outline: none;
-      border: 2px solid rgba(33, 33, 33, 1);
-      border-radius: 3px;
-      transition: $transition;
-      appearance: none;
-      opacity: 0;
-      pointer-events: none;
-    }
-    &:checked,
-    &--div {
-      background: $logoColor;
-      border: 2px $logoColor;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      &svg {
+    &:checked {
+      + .form__checkbox--div {
+        background: $logoColor;
+        border: 2px solid $logoColor;
         display: flex;
         align-items: center;
         justify-content: center;
-        fill: $logo-footerColor;
+        & .form__svg-check {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          fill: $logo-footerColor;
+        }
       }
     }
   }
-
+  &__checkbox--div {
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    outline: none;
+    border: 2px solid rgba(33, 33, 33, 1);
+    border-radius: 3px;
+  }
   &__svg-check {
     position: relative;
     display: none;
   }
+
   &--statement {
     color: $logoColor;
     text-decoration: underline;
