@@ -14,8 +14,10 @@
   text-decoration: none;
   font-size: 36px;
   font-family: "Raleway";
-  display: block;
   align-items: center;
+  &--studio {
+    color: $logoColor;
+  }
 }
 .footer-links {
   list-style: none;
@@ -27,26 +29,13 @@
     text-decoration: none;
     list-style: none;
   }
-  &__mail {
+  &__link {
     color: $paragraphColor;
     padding-top: 10px;
     list-style: none;
     text-decoration: none;
     display: block;
     align-items: center;
-
-    &:hover,
-    &:focus {
-      color: $logoColor;
-    }
-  }
-  &__tel {
-    color: $paragraphColor;
-    padding-top: 10px;
-    display: block;
-    list-style: none;
-    text-decoration: none;
-    padding-bottom: 60px;
 
     &:hover,
     &:focus {
@@ -98,24 +87,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
   }
   &__label {
     width: 100%;
-    max-width: 358px;
+    max-width: 390px;
   }
   &__email {
     background-color: $footerBackground;
     font-size: 16px;
     cursor: pointer;
     font-weight: 400;
-    border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding: 15px;
-    width: calc(100% - 15px);
-
+    width: calc(100% - 10px);
     &:hover {
       background-color: $footerBackground;
     }

@@ -31,20 +31,20 @@
     font-weight: 900;
     line-height: 1, 37;
   }
-}
-.first-button {
-  background-color: $logoColor;
-  color: $logo-footerColor;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  font-weight: 700;
-  line-height: 1.9;
-  display: flex;
-  justify-content: center;
-  margin: 30px auto;
-  width: 200px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  padding: 10px 40px;
+  &__button {
+    background-color: $logoColor;
+    color: $logo-footerColor;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 1.9;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 40px;
+  }
 }

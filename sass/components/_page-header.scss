@@ -33,6 +33,7 @@ body {
 
   &--studio {
     color: $logoColor;
+    margin-right: 0;
   }
 }
 .social-links {
@@ -56,22 +57,23 @@ body {
     &:focus {
       color: $logoColor;
     }
-  }
-}
-.link--active {
-  color: $logoColor;
-  position: relative;
+    &--active {
+      color: $logoColor;
+      position: relative;
 
-  &::after {
-    background: $logoColor;
-    border-radius: 2px;
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 4px;
-    bottom: -39px;
+      &::after {
+        background: $logoColor;
+        border-radius: 2px;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 4px;
+        bottom: -39px;
+      }
+    }
   }
 }
+
 .contact-list {
   text-decoration: none;
   display: flex;
