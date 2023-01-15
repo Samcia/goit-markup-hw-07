@@ -576,9 +576,9 @@ body {
   display: flex;
   list-style: none;
   color: #757575;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
   margin-left: auto;
 }
 .contact-list__link {
